@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F00A590F292282D40076A544 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A590E292282D40076A544 /* AppDelegate.swift */; };
 		F00A5911292282D40076A544 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5910292282D40076A544 /* SceneDelegate.swift */; };
-		F00A5913292282D40076A544 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5912292282D40076A544 /* ViewController.swift */; };
+		F00A5913292282D40076A544 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5912292282D40076A544 /* MainViewController.swift */; };
 		F00A5916292282D40076A544 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A5914292282D40076A544 /* Main.storyboard */; };
 		F00A5919292282D40076A544 /* ToDoWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F00A5917292282D40076A544 /* ToDoWithCoreData.xcdatamodeld */; };
 		F00A591B292282D60076A544 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00A591A292282D60076A544 /* Assets.xcassets */; };
@@ -17,6 +17,9 @@
 		F00A5929292282D60076A544 /* ToDoWithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5928292282D60076A544 /* ToDoWithCoreDataTests.swift */; };
 		F00A5933292282D60076A544 /* ToDoWithCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5932292282D60076A544 /* ToDoWithCoreDataUITests.swift */; };
 		F00A5935292282D60076A544 /* ToDoWithCoreDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5934292282D60076A544 /* ToDoWithCoreDataUITestsLaunchTests.swift */; };
+		F00A594229238A370076A544 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A594129238A370076A544 /* ToDoTableViewCell.swift */; };
+		F00A5947292397560076A544 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5945292397560076A544 /* Task+CoreDataClass.swift */; };
+		F00A5948292397560076A544 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A5946292397560076A544 /* Task+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		F00A590B292282D40076A544 /* ToDoWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00A590E292282D40076A544 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F00A5910292282D40076A544 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F00A5912292282D40076A544 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F00A5912292282D40076A544 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F00A5915292282D40076A544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F00A5918292282D40076A544 /* ToDoWithCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoWithCoreData.xcdatamodel; sourceTree = "<group>"; };
 		F00A591A292282D60076A544 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		F00A592E292282D60076A544 /* ToDoWithCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoWithCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00A5932292282D60076A544 /* ToDoWithCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoWithCoreDataUITests.swift; sourceTree = "<group>"; };
 		F00A5934292282D60076A544 /* ToDoWithCoreDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoWithCoreDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F00A594129238A370076A544 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		F00A5945292397560076A544 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F00A5946292397560076A544 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		F00A5902292282D40076A544 = {
 			isa = PBXGroup;
 			children = (
+				F00A5945292397560076A544 /* Task+CoreDataClass.swift */,
+				F00A5946292397560076A544 /* Task+CoreDataProperties.swift */,
 				F00A590D292282D40076A544 /* ToDoWithCoreData */,
 				F00A5927292282D60076A544 /* ToDoWithCoreDataTests */,
 				F00A5931292282D60076A544 /* ToDoWithCoreDataUITests */,
@@ -103,7 +111,8 @@
 			children = (
 				F00A590E292282D40076A544 /* AppDelegate.swift */,
 				F00A5910292282D40076A544 /* SceneDelegate.swift */,
-				F00A5912292282D40076A544 /* ViewController.swift */,
+				F00A594429238A480076A544 /* ViewController */,
+				F00A594329238A3E0076A544 /* TableViewCell */,
 				F00A5914292282D40076A544 /* Main.storyboard */,
 				F00A591A292282D60076A544 /* Assets.xcassets */,
 				F00A591C292282D60076A544 /* LaunchScreen.storyboard */,
@@ -128,6 +137,22 @@
 				F00A5934292282D60076A544 /* ToDoWithCoreDataUITestsLaunchTests.swift */,
 			);
 			path = ToDoWithCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		F00A594329238A3E0076A544 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F00A594129238A370076A544 /* ToDoTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		F00A594429238A480076A544 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F00A5912292282D40076A544 /* MainViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00A5913292282D40076A544 /* ViewController.swift in Sources */,
+				F00A594229238A370076A544 /* ToDoTableViewCell.swift in Sources */,
+				F00A5913292282D40076A544 /* MainViewController.swift in Sources */,
 				F00A590F292282D40076A544 /* AppDelegate.swift in Sources */,
 				F00A5919292282D40076A544 /* ToDoWithCoreData.xcdatamodeld in Sources */,
+				F00A5948292397560076A544 /* Task+CoreDataProperties.swift in Sources */,
+				F00A5947292397560076A544 /* Task+CoreDataClass.swift in Sources */,
 				F00A5911292282D40076A544 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
